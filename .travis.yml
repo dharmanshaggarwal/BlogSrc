@@ -1,0 +1,13 @@
+sudo: true
+
+language: node_js
+node_js:
+  - "10.15"
+
+before_install:
+  - pwd
+  - npm install -g @angular/cli
+  - npm install
+
+install:
+  - ng build --prod --base-href /blogbuild/
