@@ -5,7 +5,14 @@ setup_git() {
   git config --global user.name "Travis CI"
 }
 
-commit_website_files() {
+setup_git() {
+  git config --global user.email "travis@travis-ci.org"
+  git config --global user.name "Travis CI"
+}
+
+create_git_repo() {
+  cd dist
+  git init
   git add . 
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
@@ -17,5 +24,6 @@ upload_files() {
 }
 
 setup_git
+create_git_repo
 commit_website_files
 upload_files
