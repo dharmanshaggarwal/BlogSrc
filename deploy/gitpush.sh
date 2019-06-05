@@ -11,7 +11,8 @@ setup_git() {
 }
 
 create_git_repo() {
-  cd dist
+  rm -rf .git
+  cd dist/blogApp
   git init
   git add . 
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
