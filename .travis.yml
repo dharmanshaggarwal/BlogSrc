@@ -11,3 +11,6 @@ before_install:
 
 install:
   - ng build --prod --base-href /blogbuild/
+
+after_success:
+  - deploy/gitpush.sh
