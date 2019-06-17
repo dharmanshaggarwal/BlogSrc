@@ -2,12 +2,18 @@
   <div class="card mt-3">
     <div class="card-body">
       <h3 class="card-title">
-        <strong>Google Can't figure out what YouTube is</strong>
+        <strong
+          ><!-- Google Can't figure out what YouTube is -->
+          {{ dataReceived.heading }}</strong
+        >
       </h3>
-      <h5 style="opacity: 0.5">And it's users are suffering for it</h5>
+      <h5 style="opacity: 0.5">
+        <!-- And it's users are suffering for it -->
+        {{ dataReceived.subHeading }}
+      </h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        <!-- Some quick example text to build on the card title and make up the bulk
+        of the card's content. -->{{ dataReceived.body }}
       </p>
       <a href="#">Read more...</a>
     </div>

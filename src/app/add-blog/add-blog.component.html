@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 offset-sm-3 mt-3">
+      <input
+        type="text"
+        placeholder="Enter Heading..."
+        class="form-control"
+        [(ngModel)]="newBlog.heading"
+      />
+      <br />
+      <input
+        type="text"
+        placeholder="Enter Sub-Heading..."
+        class="form-control"
+        [(ngModel)]="newBlog.subHeading"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-sm-3 mt-3">
+      <angular-editor
+        [(ngModel)]="newBlog.body"
+        [config]="editorConfig"
+      ></angular-editor>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center mt-3">
+      <button type="button" (click)="publishBlog()" class="btn btn-success">
+        Submit
+      </button>
+    </div>
+  </div>
+</div>

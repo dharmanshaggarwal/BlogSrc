@@ -1,0 +1,17 @@
+{
+  "card_1": {
+    "heading": "Heading 1",
+    "subHeading": "Subheading 1",
+    "body": "Body 1"
+  },
+  "card_2": {
+    "heading": "Heading 2",
+    "subHeading": "Subheading 2",
+    "body": "Body 2"
+  },
+  "card_3": {
+    "heading": "Heading 3",
+    "subHeading": "Subheading 3",
+    "body": "Body 3"
+  }
+}
